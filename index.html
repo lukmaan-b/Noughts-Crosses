@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="478"
+      height="478"
+      fill="none"
+      viewBox="0 0 478 478"
+    >
+      <mask id="a" fill="#fff">
+        <path d="M239 159H7z" />
+      </mask>
+      <path
+        fill="#0EA192"
+        d="M239 166a7 7 0 100-14v14zM7 152a7 7 0 100 14v-14zm232 0H7v14h232v-14z"
+        mask="url(#a)"
+      />
+      <mask id="b" fill="#fff">
+        <path d="M239 319H7z" />
+      </mask>
+      <path
+        fill="#0EA192"
+        d="M239 326a7 7 0 100-14v14zM7 312a7 7 0 100 14v-14zm232 0H7v14h232v-14z"
+        mask="url(#b)"
+      />
+      <mask id="c" fill="#fff">
+        <path d="M239 159h232z" />
+      </mask>
+      <path
+        fill="#0EA192"
+        d="M239 152a7 7 0 100 14v-14zm232 14a7 7 0 100-14v14zm-232 0h232v-14H239v14z"
+        mask="url(#c)"
+      />
+      <mask id="d" fill="#fff">
+        <path d="M239 319h232z" />
+      </mask>
+      <path
+        fill="#0EA192"
+        d="M239 312a7 7 0 100 14v-14zm232 14a7 7 0 100-14v14zm-232 0h232v-14H239v14z"
+        mask="url(#d)"
+      />
+      <g>
+        <mask id="e" fill="#fff">
+          <path d="M159 239V7z" />
+        </mask>
+        <path
+          fill="#0EA192"
+          d="M152 239a7 7 0 1014 0h-14zM166 7a7 7 0 10-14 0h14zm0 232V7h-14v232h14z"
+          mask="url(#e)"
+        />
+      </g>
+      <g>
+        <mask id="f" fill="#fff">
+          <path d="M319 239V7z" />
+        </mask>
+        <path
+          fill="#0EA192"
+          d="M312 239a7 7 0 1014 0h-14zM326 7a7 7 0 10-14 0h14zm0 232V7h-14v232h14z"
+          mask="url(#f)"
+        />
+      </g>
+      <g>
+        <mask id="g" fill="#fff">
+          <path d="M159 239v232z" />
+        </mask>
+        <path
+          fill="#0EA192"
+          d="M166 239a7 7 0 10-14 0h14zm-14 232a7 7 0 1014 0h-14zm0-232v232h14V239h-14z"
+          mask="url(#g)"
+        />
+      </g>
+      <g>
+        <mask id="h" fill="#fff">
+          <path d="M319 239v232z" />
+        </mask>
+        <path
+          fill="#0EA192"
+          d="M326 239a7 7 0 10-14 0h14zm-14 232a7 7 0 1014 0h-14zm0-232v232h14V239h-14z"
+          mask="url(#h)"
+        />
+      </g>
+    </svg>
+    <button class="player-option" data-player="O">O</button>
+    <button class="player-option active" data-player="X">X</button>
+    <div class="container">
+      <table>
+        <tbody>
+          <tr id="row-0">
+            <td id="box-0"></td>
+            <td id="box-1"></td>
+            <td id="box-2"></td>
+          </tr>
+          <tr id="row-1">
+            <td id="box-0"></td>
+            <td id="box-1"></td>
+            <td id="box-2"></td>
+          </tr>
+          <tr id="row-2">
+            <td id="box-0"></td>
+            <td id="box-1"></td>
+            <td id="box-2"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="reset">Reset</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
